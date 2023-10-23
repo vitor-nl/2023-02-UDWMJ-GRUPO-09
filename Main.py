@@ -1,10 +1,10 @@
-from Cliente import Cliente
-from Order import Order
-from OrderItem import OrderItem
+from client import Client
+from order import Order
+from order_item import OrderItem
 
-client = Cliente("Eduarda","Ilha","ldr45","44","Eduarda@gmail.com","F")
+client = Client("Eduarda","Ilha","ldr45","44","Eduarda@gmail.com","F")
 #print(client.firt_name)
 order = Order(50,"status",client)
-print(order.Cliente.firt_name)
+print(order.Client.firt_name)
 orderi= OrderItem(1,50,order)
-print(orderi.Order.Cliente.firt_name)
+print(orderi.Order.Client.firt_name)
